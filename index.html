@@ -20,22 +20,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="#about">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Our Team</a>
+          <a class="nav-link" href="#team">Our Team</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link" href="#contact">Contact Us</a>
         </li>
     </div>
   </nav>
 
   <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid" style="background:url(./resources/images/jumbotron.png) no-repeat; background-size: cover;">
+  <div id="home" class="jumbotron jumbotron-fluid" style="background:url(./resources/images/jumbotron.png) no-repeat; background-size: cover;">
    <div class="bg-secondary text-white text-center my-5">
      <h1 class="display-3">Administration made easy</h1>
      <p>Adhoc is an on-demand administrative service for your company growth</p>
@@ -55,7 +55,7 @@
     <hr>
 
     <!-- Why Adhoc? Text -->
-    <div class="row my-5">
+    <div class="row my-5" id="about">
       <div class="col">
         <h2 class="display-4 text-center">Why Adhoc?</h2>
       </div>
@@ -102,7 +102,7 @@
     </div>
 
     <!-- Team Pictures Carousel -->
-    <div class="row bg-dark rounded-bottom">
+    <div class="row bg-dark rounded-bottom" id="team">
       <div class="col mb-5">
         <!-- Carousel Component -->
         <div id="carouselExampleControls" class="carousel slide w-50 m-auto" data-ride="carousel">
@@ -147,7 +147,7 @@
   </div>
 
   <!-- Footer -->
-  <footer class="text-center mt-3">2019 Adhoc &copy;</footer>
+  <footer class="text-center mt-3" id="contact">2019 Adhoc &copy;</footer>
 
   <!-- Bootstrap's JavaScript Files -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
