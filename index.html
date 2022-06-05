@@ -12,7 +12,7 @@
 <body>
   <!-- Navbar Component -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#"><img src="./resources/images/logo.png" alt="adhoc company logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,96 +23,113 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          <a class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link" href="#">Our Team</a>
         </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
     </div>
   </nav>
 
   <!-- Jumbotron -->
-  <div style="background:url(https://content.codecademy.com/courses/learn-bootstrap-4/adhoc/jumbotron.png) no-repeat; background-size: cover;">
-   
+  <div class="jumbotron jumbotron-fluid" style="background:url(./resources/images/jumbotron.png) no-repeat; background-size: cover;">
+   <div class="bg-secondary text-white text-center my-5">
+     <h1 class="display-3">Administration made easy</h1>
+     <p>Adhoc is an on-demand administrative service for your company growth</p>
+   </div>
   </div>
 
   <!-- Container -->
   <div class="container">
     <!-- Quote Section -->
     <div class="row">
-      <div class="col">
-        <h2>"Thanks to Adhoc we now have beautiful and faithful service every
+      <div class="col my-5">
+        <h2 class="font-weight-light font-italic text-left">"Thanks to Adhoc we now have beautiful and faithful service every
           day. Our customers are happy and engagement has drastically increased. Highly recommend!"</h2>
-        <p>-Dave Ellavar, <span>Academy of Code</span></p>
+        <p class="font-weight-bold text-right">-Dave Ellavar, <span class="font-weight-light font-italic">Academy of Code</span></p>
       </div>
     </div>
     <hr>
 
     <!-- Why Adhoc? Text -->
-    <div class="row">
+    <div class="row my-5">
       <div class="col">
-        <h2>Why Adhoc?</h2>
+        <h2 class="display-4 text-center">Why Adhoc?</h2>
       </div>
     </div>
 
     <!-- Image Reasons Section -->
-    <div class="row">
-      <div class="col">
+    <div class="row d-flex justify-content-center my-5">
+      <div class="col-8 col-md-4 d-flex justify-content-center">
         <!-- First card goes here -->
-
+        <div class="card border-0" style="width: 18rem;">
+          <img src="./resources/images/experienced.png" class="card-img-top" alt="experienced">
+          <div class="card-body">
+            <p class="card-text text-center">Over 9000 happy clients and we learn something new from each one.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="col">
+      <div class="col-8 col-md-4 d-flex justify-content-center">
         <!-- Second card goes here -->
-        
+        <div class="card border-0" style="width: 18rem;">
+          <img src="./resources/images/fun.png" class="card-img-top" alt="fun">
+          <div class="card-body">
+            <p class="card-text text-center">Administration? Fun? Yeah, somehow we make it happen.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="col">
+      <div class="col-8 col-md-4 d-flex justify-content-center">
         <!-- Third card goes here -->
-
+        <div class="card border-0" style="width: 18rem;">
+          <img src="./resources/images/smart.png" class="card-img-top" alt="smart">
+          <div class="card-body">
+            <p class="card-text text-center">Innovative solutions to the trickiest of everyday tasks.</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Meet the Team Section -->
-    <div class="row">
-      <div class="col">
-        <h2>Meet the Team</h2>
+    <div class="row bg-dark rounded-top">
+      <div class="col mt-5 mb-4">
+        <h2 class="text-white text-center display-4">Meet the Team</h2>
       </div>
     </div>
 
     <!-- Team Pictures Carousel -->
-    <div class="row">
-      <div class="col">
+    <div class="row bg-dark rounded-bottom">
+      <div class="col mb-5">
         <!-- Carousel Component -->
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide w-50 m-auto" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="..." class="d-block w-100" alt="...">
+              <img src="./resources/images/brian.png" class="d-block w-100" alt="Brian CEO">
+              <div class="carousel-caption bg-dark rounded-pill py-0 text-center">
+                <h5 class="font-weight-bold">Brian: <span class="font-weight-light">CEO</span></h5>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
+              <img src="./resources/images/andy.png" class="d-block w-100" alt="Andy CFO">
+              <div class="carousel-caption bg-dark text-center py-0 rounded-pill">
+                <h5 class="font-weight-bold">Andy: <span class="font-weight-light">CFO</span></h5>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
+              <img src="./resources/images/angela.png" class="d-block w-100" alt="Angela COO">
+              <div class="carousel-caption bg-dark text-center py-0 rounded-pill">
+                <h5 class="font-weight-bold">Angela: <span class="font-weight-light">COO</span></h5>
+              </div>
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
+              <img src="./resources/images/amie.png" class="d-block w-100" alt="Amie CTO">
+              <div class="carousel-caption bg-dark text-center py-0 rounded-pill">
+                <h5 class="font-weight-bold">Amie, <span class="font-weight-light">CTO</span></h5>
+              </div>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -130,7 +147,7 @@
   </div>
 
   <!-- Footer -->
-  <footer>2019 Adhoc &copy;</footer>
+  <footer class="text-center mt-3">2019 Adhoc &copy;</footer>
 
   <!-- Bootstrap's JavaScript Files -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
